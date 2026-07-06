@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights Cake Shop</title>
+    <style>
+        /* Basic Reset and Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fcf8f2;
+            color: #4a3728;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #ffb7b2;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #6c464f;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #6c464f;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #ffdac1;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #6c464f;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Cake Menu Section */
+        .menu-section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #6c464f;
+        }
+
+        .cake-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .cake-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .cake-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .cake-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            background-color: #e8e8e8; /* Placeholder background color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-style: italic;
+        }
+
+        .cake-info {
+            padding: 1.5rem;
+        }
+
+        .cake-name {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #6c464f;
+        }
+
+        .cake-description {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .cake-price {
+            font-weight: bold;
+            color: #e07a5f;
+            font-size: 1.2rem;
+        }
+
+        /* About Section */
+        .about-section {
+            background-color: #e2f0cb;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 4rem 2rem;
+            text-align: center;
+            background-color: #b5ead7;
+        }
+
+        .clickable-phone {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 10px 20px;
+            background-color: #6c464f;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: background 0.3s;
+        }
+
+        .clickable-phone:hover {
+            background-color: #4a3728;
+        }
+
+        footer {
+            background-color: #6c464f;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="home">
+        <div class="logo">🍰 Sweet Delights</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Our Cakes</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Baked with Love, Shared with Joy</h1>
+        <p>Fresh, custom, and delicious cakes for every special occasion.</p>
+    </header>
+
+    <!-- Cake Menu Section -->
+    <main class="menu-section" id="menu">
+        <h2 class="section-title">Featured Cakes</h2>
+        <div class="cake-grid">
+
+            <!-- Cake 1 -->
+            <div class="cake-card">
+                <!-- Replace 'src' with your own image path later! -->
+                <img class="cake-img" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500" alt="Chocolate Fudge Cake">
+                <div class="cake-info">
+                    <h3 class="cake-name">Chocolate Fudge Cake</h3>
+                    <p class="cake-description">Rich, moist layers of chocolate cake covered in smooth, decadent fudge frosting.</p>
+                    <p class="cake-price">$35.00</p>
+                </div>
+            </div>
+
+            <!-- Cake 2 -->
+            <div class="cake-card">
+                <img class="cake-img" src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500" alt="Strawberry Cream Cake">
+                <div class="cake-info">
+                    <h3 class="cake-name">Strawberry Cream Cake</h3>
+                    <p class="cake-description">Light vanilla sponge layers packed with fresh strawberries and whipped cream.</p>
+                    <p class="cake-price">$40.00</p>
+                </div>
+            </div>
+
+            <!-- Cake 3 -->
+            <div class="cake-card">
+                <img class="cake-img" src="https://images.unsplash.com/photo-1535141192574-5d4897c13636?w=500" alt="Red Velvet Dream">
+                <div class="cake-info">
+                    <h3 class="cake-name">Red Velvet Dream</h3>
+                    <p class="cake-description">Classic cocoa-infused red velvet cake layered with premium cream cheese frosting.</p>
+                    <p class="cake-price">$38.00</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <h2 class="section-title">Our Story</h2>
+            <p>Welcome to Sweet Delights! We are a family-owned bakery dedicated to crafting unforgettable flavors using only the finest, freshest local ingredients. Whether it’s a birthday party, wedding, or just a Tuesday craving, we believe every day is a good day for cake.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2 class="section-title">Order Your Cake Today</h2>
+        <p>Have a custom design request? Want to check today's specials? Give us a call directly!</p>
+        <!-- Clickable Phone Number -->
+        <a href="tel:+1234567890" class="clickable-phone">📞 Call Us: (123) 456-7890</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Sweet Delights Cake Shop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
